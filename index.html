@@ -2,37 +2,47 @@
 <html lang="ru">
   <head>
     <meta  charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Разработка сайтов</title>
     <link rel="stylesheet" href="fonts.css">
     <link  href="style.css"  rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <nav class="menu">
-        <a class="menu__item" href="#">Мои навыки</a>
-        <a class="menu__item" href="#">Оставить заявку</a>
-      </nav>
+      <div class="burg-menu">
+        <input id='menucheck' type="checkbox"/>
+        <label class="menu__btn" for="menucheck">
+          <span></span>
+        </label>
+        <nav class="menu">
+          <a class="menu__item" href="#">Мои навыки</a>
+          <a class="menu__item" href="#">Оставить заявку</a>
+        </nav>
+      </div>  
       <a class="menu__button" href="#">Позвонить</a>
     </header>
     <main>
       <section class="main-header">
         <h1 class="main-header__title">Разработка сайтов, игр и приложений</h1>
-        <p class="main-header__subtitle">Помогаю воплощать мечты в реальность</p>
+        <p class="main-header__subtitle1">Помогаю воплощать <span class="main-header__subtitle2">мечты в реальность</span></p>
       </section>
       <section class="main-content">
         <h3 class="main-content__title">Почему вам стоит обратиться ко мне</h3>
         <div class="col">
           <div class="col-1">
             <h3 class="col-1__title">Индивидуальный подход</h3>
-            <p class="col-1__text">Каждый клиент для меня особенный. Я тщательно изучаю что ему необходимо, прежде, чем приступить к работе.</p>
+            <p class="col-1__text_first">Каждый клиент</p>
+            <p class="col-1__text_second">для меня особенный. Я тщательно изучаю</p>
+            <p class="col-1__text_third">что ему необходимо, прежде, чем приступить к работе.</p>
           </div>
           <div class=col-2>
-            <h3 class="col-2__title">Разумные цены</h3>
+            <h3 class="col-2__title_first">Разумные</h3>
+            <h3 class="col-2__title_second">цены</h3>
             <p class="col-2__text">Я предлагаю выгодные цены за безупречное выполнение работы и соблюдение сроков.</p>
           </div>
           <div class=col-3>
             <h3 class="col-3__title">Отличный результат!</h3>
-            <p class="col-3__text">Я внимательно работаю над каждым проектом. Я очень люблю свою работу, поэтому вас обрадует результат проделанной работы.</p>
+            <p class="col-3__text"><span class="col-3__text_first">Я внимательно работаю над каждым проектом. <span class="col-3__text_second">Я очень люблю свою работу, </span><span class="col-3__text_third">поэтому вас обрадует результат проделанной работы.</span></p>
           </div>
         </div>
         <a class="main-content__button" href="#">Получить консультацию</a>
@@ -42,13 +52,17 @@
         <div class="row">
           <div class="row1">
             <img src="img/img4.svg">
-            <h3 class="row1__title">Я умею писать валидный и семмантически верный код для вашего сайта или приложения</h3>
-            <p class="row1__subtitle">Ваш сайт и приложение будут верно работать, благодаря моей верстке</p>
+            <h3 class="row1__title_first">Я умею писать валидный</h3>
+            <h3 class="row1__title_second">и семмантически верный код</h3>
+            <h3 class="row1__title_third">для вашего сайта или приложения</h3>
+            <p class="row1__subtitle">Ваш сайт и приложение будут верно&nbsp;работать, благодаря моей верстке</p>
           </div>
           <div class="row2">
             <img src="img/img5.svg">
-            <h3 class="row2__title">Я умею создавать игры и анимации с помощью JavaScript</h3>
-            <p class="row2__subtitle">Я свободно владею языком JavaScript и могу “оживить” ваш сайт и приложение</p>
+            <h3 class="row2__title_first">Я умею создавать игры</h3>
+            <h3 class="row2__title_second">и анимации с помощью JavaScript</h3>
+            <p class="row2__subtitle_first">Я свободно владею языком JavaScript</p>
+            <p class="row2__subtitle_second">и могу “оживить” ваш сайт и приложение</p>
           </div>
           <div class="row3">
             <img src="img/img6.svg">
@@ -76,9 +90,9 @@
     </main>
     <footer class="footer">
       <p class="footer__title">Меня можно найти в социальных сетях:</p>
-      <img class="icon__linkedin" src="img/linkedin.svg">
-      <img class="icon__instagram" src="img/instagram.svg">
-      <img class="icon__facebook" src="img/facebook.svg">
+      <a class="icon__linkedin" href="#"><img src="img/linkedin.svg"></a>
+      <a class="icon__instagram"  href="#"><img src="img/instagram.svg"></a>
+      <a class="icon__facebook" href="#"><img src="img/facebook.svg"></a>
       <p class="footer__text">2020 © WebHero School</p>
     </footer>
   </body>
