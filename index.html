@@ -11,63 +11,68 @@
     <header class="header">
       <div class="burg-menu">
         <input id='menucheck' type="checkbox"/>
-        <label class="menu__btn" for="menucheck">
+        <label class="burg-menu__btn" for="menucheck">
           <span></span>
         </label>
         <nav class="menu">
           <a class="menu__item" href="#">Мои навыки</a>
           <a class="menu__item" href="#">Оставить заявку</a>
         </nav>
-      </div>  
+      </div>
       <a class="menu__button" href="#">Позвонить</a>
     </header>
     <main>
       <section class="main-header">
         <h1 class="main-header__title">Разработка сайтов, игр и приложений</h1>
-        <p class="main-header__subtitle1">Помогаю воплощать <span class="main-header__subtitle2">мечты в реальность</span></p>
+        <p class="main-header__subtitle">Помогаю воплощать <span class="main-header__subtitle_narrow">мечты в реальность</span></p>
       </section>
       <section class="main-content">
         <h3 class="main-content__title">Почему вам стоит обратиться ко мне</h3>
-        <div class="col">
-          <div class="col-1">
-            <h3 class="col-1__title">Индивидуальный подход</h3>
-            <p class="col-1__text_first">Каждый клиент</p>
-            <p class="col-1__text_second">для меня особенный. Я тщательно изучаю</p>
-            <p class="col-1__text_third">что ему необходимо, прежде, чем приступить к работе.</p>
+        <div class="main-content-col">
+          <div class="col-description-individual">
+            <h3 class="col-description-individual__title">Индивидуальный подход</h3>
+            <p class="col-description-individual__text_short">Каждый клиент</p>
+            <p class="col-description-individual__text_long">для меня особенный. Я тщательно изучаю</p>
+            <p class="col-description-individual__text_medium">что ему необходимо, прежде, чем приступить к работе.</p>
           </div>
-          <div class=col-2>
-            <h3 class="col-2__title_first">Разумные</h3>
-            <h3 class="col-2__title_second">цены</h3>
-            <p class="col-2__text">Я предлагаю выгодные цены за безупречное выполнение работы и соблюдение сроков.</p>
+          <div class="col-descrition-price">
+            <h3 class="col-descrition-price__title_long">Разумные</h3>
+            <h3 class="col-descrition-price__title_short">цены</h3>
+            <p class="col-descrition-price__text">Я предлагаю выгодные цены за безупречное выполнение работы и соблюдение сроков.</p>
           </div>
-          <div class=col-3>
-            <h3 class="col-3__title">Отличный результат!</h3>
-            <p class="col-3__text"><span class="col-3__text_first">Я внимательно работаю над каждым проектом. <span class="col-3__text_second">Я очень люблю свою работу, </span><span class="col-3__text_third">поэтому вас обрадует результат проделанной работы.</span></p>
+          <div class=col-description-result>
+            <h3 class="col-description-result__title">Отличный результат!</h3>
+            <p class="col-description-result__text">
+              <span class="col-description-result__text_narrow">Я внимательно работаю над каждым проектом.</span>
+              <span class="col-description-result__text_wide">Я очень люблю свою работу, поэтому вас обрадует результат проделанной работы.</span>
+            </p>
           </div>
         </div>
         <a class="main-content__button" href="#">Получить консультацию</a>
       </section>
-      <section class="main-info">
-        <h3 class="main-info__title">Что я могу</h3>
-        <div class="row">
-          <div class="row1">
-            <img src="img/img4.svg">
-            <h3 class="row1__title_first">Я умею писать валидный</h3>
-            <h3 class="row1__title_second">и семмантически верный код</h3>
-            <h3 class="row1__title_third">для вашего сайта или приложения</h3>
-            <p class="row1__subtitle">Ваш сайт и приложение будут верно&nbsp;работать, благодаря моей верстке</p>
+      <section class="main-skill">
+        <h3 class="main-skill__title">Что я могу</h3>
+        <div class="main-skill-section">
+          <div class="main-skill-code">
+            <img class="main-skill-code__img" src="img/img4.svg">
+            <h3 class="main-skill-code__title">Я умею писать валидный
+              <span class="main-skill-code__title_medium">и&nbsp;семмантически верный код</span>
+              <span class="main-skill-code__title_long">для&nbsp;вашего сайта или приложения</span>
+            </h3>
+            <p class="main-skill-code__subtitle">Ваш сайт и приложение будут верно&nbsp;работать, благодаря моей верстке</p>
           </div>
-          <div class="row2">
-            <img src="img/img5.svg">
-            <h3 class="row2__title_first">Я умею создавать игры</h3>
-            <h3 class="row2__title_second">и анимации с помощью JavaScript</h3>
-            <p class="row2__subtitle_first">Я свободно владею языком JavaScript</p>
-            <p class="row2__subtitle_second">и могу “оживить” ваш сайт и приложение</p>
+          <div class="main-skill-game">
+            <img class="main-skill-game__img" src="img/img5.svg">
+            <h3 class="main-skill-game__title">Я умею создавать игры
+              <span class="main-skill-game__title_long">и анимации с помощью JavaScript</span>
+            </h3>
+            <p class="main-skill-game__subtitle">Я свободно владею языком JavaScript</p>
+            <p class="main-skill-game__subtitle_long">и могу “оживить” ваш сайт и приложение</p>
           </div>
-          <div class="row3">
-            <img src="img/img6.svg">
-            <h3 class="row3__title">Я умею создавать приложения с помощью React</h3>
-            <p class="row3__subtitle">Благодаря моим навыкам, ваш сайт и приложение будут максимально удобными в использовании</p>
+          <div class="main-skill-app">
+            <img class="main-skill-app__img" src="img/img6.svg">
+            <h3 class="main-skill-app__title">Я умею создавать приложения с помощью React</h3>
+            <p class="main-skill-app__subtitle">Благодаря моим навыкам, ваш сайт и приложение будут максимально удобными в использовании</p>
           </div>
         </div>
       </section>
@@ -86,6 +91,7 @@
             <input name="email" type="email" class="contact-form__input_contact-form__input_email" placeholder="e-mail">
           </div>
           <a class="contact-form__button" href="#">Отправить</a>
+        </form>
       </section>
     </main>
     <footer class="footer">
