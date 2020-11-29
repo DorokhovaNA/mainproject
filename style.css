@@ -36,13 +36,14 @@ body {
   height: 2.4vh;
   margin-top: 3.1vh;
   margin-right: 9vw;
-  font: 800 19px/24px montserratextrabold, sans-serif;
+  font: 800 16px/20px montserratextrabold, sans-serif;
   color: #fff;
   background: #330099;
   padding: 1vw 3.6vh;
   text-decoration: none;
   border-radius: 50px;
   transition: opacity 0.5s;
+  text-align: center;
 }
 
 .menu__button:hover {
@@ -301,12 +302,15 @@ body {
   color: #585858;
   font: 500 21px/24px montserratmedium, sans-serif;
   margin: 0;
-  padding-top: 13vh;
-  padding-left: 14vw;
-  position: absolute;
+  padding-top: 1vh;
+  padding-left: 2vw;
   width: 34vw;
   letter-spacing: 1px;
   grid-area: sub;
+}
+
+.main-skill__circle {
+  display: none;
 }
 
 .main-skill-game {
@@ -455,7 +459,7 @@ body {
 
 .contact-form__button {
   font: 900 20px/24px montserratblack, sans-serif;
-  margin: 0 40vw 0 40vw;
+  margin: 0 39vw 0 40vw;
   color: #fff;
   background: #4ab272;
   padding: 2.7vh 6.2vw;
@@ -509,7 +513,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 260px) and (max-width: 420px) {
   .menu {
     display: none;
   }
@@ -637,7 +641,7 @@ body {
     height: 6.5vh;
     padding-top: 3.6vh;
     padding-left: 19vw;
-    padding-right: 11vw;
+    padding-right: 10vw;
     margin: 0;
     font: 900 20px/24px montserratblack, sans-serif;
     width: 70vw;
@@ -673,7 +677,7 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    margin: 0;
+    margin-bottom: 1.8vh;
     padding-left: 9vw;
   }
 
@@ -751,7 +755,7 @@ body {
 
   .col-description-result__title {
     font: 900 16px/20px montserratblack, sans-serif;
-    margin-bottom: 0;
+    margin-bottom: 0.5vh;
     padding-top: 8.8vh;
     padding-left: 15vw;
     padding-right: 15vw;
@@ -768,19 +772,24 @@ body {
   .col-description-result__text {
     margin: 0;
     text-align: center;
+    padding-left: 6.2vw;
+    padding-right: 6vw;
   }
 
   .col-description-result__text_narrow {
-    font: 500 15px/20px montserratmedium, sans-serif;
-    padding-top: 0.3vh;
-    padding-left: 9vw;
-    width: 62vw;
-    letter-spacing: 1.7px;
+    display: contents;
+    font: 500 16px/20px montserratmedium, sans-serif;
+    padding-top: 0;
+    letter-spacing: 1.5px;
+    width: 74vw;
+    word-spacing: 6px;
   }
 
   .col-description-result__text_wide {
-    font: 500 15px/20px montserratmedium, sans-serif;
-    width: 81vw;
+    display: contents;
+    font: 500 16px/20px montserratmedium, sans-serif;
+    letter-spacing: 1.4px;
+    width: 86vw;
   }
 
   .main-content__button {
@@ -788,6 +797,7 @@ body {
     font: 800 16px/20px montserratextrabold, sans-serif;
     margin: 0 9vw 0 9vw;
     padding: 2.2vh 2.2vw;
+    text-align: center;
   }
 
   .main-skill {
@@ -801,31 +811,33 @@ body {
 
   .main-skill-code {
     display: block;
-    padding-top: 4.8vh;
-    padding-left: 15vw;
+    position: relative;
+    padding: 4.8vh 0 0 12vw;
   }
 
   .main-skill-code__img {
-    padding-left: 8vw;
+    padding: 0 10vw;
   }
 
   .main-skill-code__title {
     font: 600 16px/19px montserratsemibold, sans-serif;
-    padding: 1.3vh 0 0 0;
-    width: 68vw;
-    letter-spacing: 0.5px;
+    padding: 1.3vh 0 0 1vw;
+    width: 72vw;
+    letter-spacing: 0.6px;
     text-align: center;
+    margin-bottom: 1vh;
   }
 
   .main-skill-code__title_medium {
     font: 600 16px/19px montserratsemibold, sans-serif;
-    padding-top: 0.5vh;
+    letter-spacing: 0.9px;
+    padding-right: 3vw;
     padding-left: 0;
   }
 
   .main-skill-code__title_long {
     font: 600 16px/19px montserratsemibold, sans-serif;
-    padding-top: 1.7vh;
+    letter-spacing: 0.6px;
     padding-left: 0;
   }
 
@@ -833,9 +845,39 @@ body {
     font: 500 14px/17px montserratmedium, sans-serif;
     margin: 0;
     padding-top: 1vh;
-    padding-left: 7vw;
+    padding-left: 8.9vw;
     width: 56vw;
     text-align: center;
+  }
+
+  .main-skill__circle {
+    display: block;
+    position: absolute;
+    left: 38vw;
+    top: 58.5vh;
+    transform: translateY(-50%);
+    width: 5vw;
+    height: 2.2vh;
+    border-radius: 50%;
+    background: #ffda45;
+  }
+
+  .main-skill__circle_color_white {
+    border-radius: 50%;
+    border: 1px solid #e1e6e9;
+    position: absolute;
+    left: 10vw;
+    height: 2vh;
+    width: 4.5vw;
+  }
+
+  .main-skill__circle_color_white_right {
+    border-radius: 50%;
+    border: 1px solid #e1e6e9;
+    position: absolute;
+    left: 20vw;
+    height: 2vh;
+    width: 4.5vw;
   }
 
   .main-skill-game {
@@ -857,21 +899,20 @@ body {
   }
 
   .main-form__img {
-    padding-left: 23.5vw;
-    padding-top: 2.4vh;
+    padding: 2.4vh 17vw 0 23vw;
   }
 
   .contact-form__title {
     font: 700 17px/20px montserratsemibold, sans-serif;
     margin-bottom: 2.2vh;
-    padding: 4.4vh 11vw 0 10vw;
+    padding: 4.4vh 6vw 0 10vw;
     text-align: center;
     width: 80vw;
   }
 
   .contact-form__input-wrapper {
     margin: 0 auto;
-    padding-bottom: 2vh;
+    padding-bottom: 1.8vh;
     width: 80vw;
   }
 
@@ -883,17 +924,23 @@ body {
     margin: 0 auto;
     height: 6vh;
     font: 600 10px/12px montserratsemibold, sans-serif;
-    padding-left: 8vw;
+    padding-left: 7vw;
     width: 71vw;
+    letter-spacing: 0.5px;
+  }
+
+  .contact-form__input_contact-form__input_name {
+    padding-top: 1vh;
+    height: 5.5vh;
   }
 
   .contact-form__input_contact-form__input_email {
-    margin-bottom: 4vh;
+    margin-bottom: 4.7vh;
   }
 
   .contact-form__button {
     font: 900 16px/19px montserratblack, sans-serif;
-    margin: 0 10vw 0 10vw;
+    margin: 0 9vw 0 9vw;
     color: #fff;
     background: #4ab272;
     padding: 2.5vh 26vw;
@@ -917,19 +964,28 @@ body {
     font: normal 14px/16px robotoregular, sans-serif;
     margin: 0;
     padding-top: 4.3vh;
-    padding-left: 11vh;
+    padding-left: 15vw;
     width: 68vw;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .icon__linkedin {
-    padding-left: 17%;
+    padding-left: 10%;
     transition: opacity 0.5s;
+  }
+
+  .img-icon__linkedin,
+  .img-icon__instagram,
+  .img-icon__facebook {
+    height: 5vh;
+    padding-top: 2vh;
   }
 
   .icon__instagram,
   .icon__facebook {
-    padding-left: 6.5%;
+    padding-left: 22.5%;
     transition: opacity 0.5s;
   }
 
@@ -942,7 +998,665 @@ body {
   .footer__text {
     font: normal 14px/16px robotoregular, sans-serif;
     margin: 0;
-    padding-top: 5vh;
+    padding-top: 6vh;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1070px) and (max-width: 1410px) {
+
+  .menu__button {
+    margin-top: 4.5vh;
+    font: 800 15px/18px montserratextrabold, sans-serif;
+    padding: 0.8vw 3.2vh;
+    text-align: center;
+  }
+
+  .main-header__title {
+    width: 42vw;
+    padding-right: 0;
+  }
+
+  .main-header__subtitle {
+    padding-left: 65vw;
+  }
+
+  .main-content__button {
+    font: 800 14px/20px montserratextrabold, sans-serif;
+  }
+
+  .main-skill-code__title,
+  .main-skill-code__title_medium,
+  .main-skill-code__title_long {
+    font: 600 24px/30px montserratsemibold, sans-serif;
+    width: 46vw;
+    letter-spacing: 0;
+  }
+
+  .main-skill-game {
+    padding-left: 19vw;
+  }
+
+  .main-skill-game__title {
+    font: 600 24px/30px montserratsemibold, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .main-skill-game__title_long {
+    font: 600 24px/30px montserratsemibold, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .main-skill-game__subtitle {
+    letter-spacing: 0;
+    width: 35vw;
+  }
+
+  .main-skill-app__title {
+    width: 39vw;
+    font: 600 24px/30px montserratsemibold, sans-serif;
+  }
+
+  .main-skill-app__subtitle {
+    width: 36vw;
+    letter-spacing: 0;
+  }
+
+  .contact-form__title {
+    width: 35vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    height: 5.9vh;
+    font: 600 14px/18px montserratsemibold, sans-serif;
+    width: 25vw;
+  }
+
+  .contact-form__button {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding: 2.1vh 9.2vw;
+    margin: 0 33vw 0 40vw;
+    text-align: center;
+  }
+}
+
+@media (min-width: 876px) and (max-width: 1069px) {
+
+  .menu__button {
+    font: 800 14px/16px montserratextrabold, sans-serif;
+    padding: 1vw 4.6vh;
+    margin-top: 4.5vh;
+  }
+
+  .main-header__title {
+    width: 68vw;
+    padding-left: 19.6vw;
+    font: 900 30px/39px montserratmedium, sans-serif;
+  }
+
+  .main-header__subtitle {
+    padding-left: 59vw;
+    font: bold 26px/30px montserratbold, sans-serif;
+  }
+
+  .main-header__subtitle_narrow {
+    font: bold 26px/30px montserratbold, sans-serif;
+  }
+
+  .main-content__title,
+  .main-skill__title,
+  .main-form__title {
+    font: 900 26px/30px montserratblack, sans-serif;
+  }
+
+  .col-description-individual__title,
+  .col-descrition-price__title_long,
+  .col-descrition-price__title_short,
+  .col-description-result__title {
+    font: 800 24px/32px montserratblack, sans-serif;
+  }
+
+  .col-description-individual__text_short,
+  .col-description-individual__text_long,
+  .col-description-individual__text_medium,
+  .col-descrition-price__text,
+  .col-description-result__text_narrow,
+  .col-description-result__text_wide {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    letter-spacing: 1px;
+    width: 21vw;
+  }
+
+  .main-content__button {
+    font: 800 16px/20px montserratextrabold, sans-serif;
+    margin: 0 33vw 0 33vw;
+    padding: 2.2vh 4.2vw;
+  }
+
+  .main-skill-code__title,
+  .main-skill-code__title_medium,
+  .main-skill-code__title_long,
+  .main-skill-game__title,
+  .main-skill-game__title_long,
+  .main-skill-app__title {
+    font: 600 24px/30px montserratsemibold, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .main-skill-code__subtitle,
+  .main-skill-game__subtitle,
+  .main-skill-game__subtitle_long,
+  .main-skill-app__subtitle {
+    font: 500 18px/20px montserratmedium, sans-serif;
+  }
+
+  .main-skill-game__subtitle {
+    width: 43vw;
+    padding-left: 11vw;
+  }
+
+  .main-skill-game__subtitle_long {
+    padding-left: 7.5vw;
+    width: 47vw;
+  }
+
+  .main-skill-game {
+    padding: 1vh 17vw 0 16vw;
+  }
+
+  .contact-form__title {
+    font: 700 19px/20px montserratsemibold, sans-serif;
+    padding-left: 31vw;
+    width: 38vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    height: 5.9vh;
+    font: 600 14px/16px montserratsemibold, sans-serif;
+    width: 26vw;
+  }
+
+  .contact-form__button {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding: 2.1vh 9.2vw;
+    text-align: center;
+    margin: 0 32vw 0 39vw;
+  }
+
+  .footer__title {
+    padding-left: 31vw;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 875px) {
+
+  .menu__item {
+    font: 800 12px/16px gilroyextrabold, sans-serif;
+  }
+
+  .menu__button {
+    font: 800 10px/16px montserratextrabold, sans-serif;
+    padding: 1vw 4.6vh;
+    margin-top: 4.5vh;
+  }
+
+  .main-header__title {
+    width: 68vw;
+    padding-left: 19.6vw;
+    padding-top: 9vh;
+    font: 900 30px/39px montserratmedium, sans-serif;
+  }
+
+  .main-header__subtitle {
+    padding-left: 50vw;
+    font: bold 24px/26px montserratbold, sans-serif;
+  }
+
+  .main-header__subtitle_narrow {
+    font: bold 24px/26px montserratbold, sans-serif;
+  }
+
+  .main-content-col {
+    padding: 0 4vw;
+  }
+
+  .main-content__title,
+  .main-skill__title,
+  .main-form__title {
+    font: 900 20px/24px montserratblack, sans-serif;
+  }
+
+  .col-description-individual {
+    width: 25vw;
+    margin-right: 0;
+  }
+
+  .col-description-individual__title,
+  .col-descrition-price__title_long,
+  .col-descrition-price__title_short,
+  .col-description-result__title {
+    font: 800 19px/21px montserratblack, sans-serif;
+  }
+
+  .col-description-individual__text_short,
+  .col-description-individual__text_long,
+  .col-description-individual__text_medium,
+  .col-descrition-price__text,
+  .col-description-result__text_narrow,
+  .col-description-result__text_wide {
+    font: 500 14px/18px montserratmedium, sans-serif;
+    letter-spacing: 1px;
+    width: 25vw;
+  }
+
+  .col-description-result__text_narrow {
+    padding-left: 0;
+  }
+
+  .main-content__button {
+    font: 800 12px/15px montserratextrabold, sans-serif;
+    margin: 0 30vw 0 30vw;
+    padding: 2.2vh 4.2vw;
+  }
+
+  .main-skill-code__title,
+  .main-skill-code__title_medium,
+  .main-skill-code__title_long,
+  .main-skill-game__title,
+  .main-skill-game__title_long,
+  .main-skill-app__title {
+    font: 600 20px/24px montserratsemibold, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .main-skill-code__subtitle,
+  .main-skill-game__subtitle,
+  .main-skill-game__subtitle_long,
+  .main-skill-app__subtitle {
+    font: 500 16px/18px montserratmedium, sans-serif;
+  }
+
+  .main-skill-game__subtitle {
+    width: 52vw;
+    padding-left: 3vw;
+  }
+
+  .main-skill-game__subtitle_long {
+    padding-left: 0.5vw;
+    width: 56vw;
+  }
+
+  .main-skill-game {
+    padding: 1vh 17vw 0 16vw;
+  }
+
+  .main-skill-app__title {
+    padding-left: 3vw;
+    width: 47vw;
+  }
+
+  .main-skill-app__subtitle {
+    width: 41vw;
+    padding-left: 3vw;
+  }
+
+  .main-form__img {
+    padding-left: 40.5vw;
+  }
+
+  .contact-form__title {
+    font: 700 17px/20px montserratsemibold, sans-serif;
+    padding-left: 28vw;
+    width: 51vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    height: 4.9vh;
+    font: 600 12px/14px montserratsemibold, sans-serif;
+    width: 26vw;
+  }
+
+  .contact-form__button {
+    font: 900 14px/17px montserratblack, sans-serif;
+    padding: 2.1vh 9.2vw;
+    text-align: center;
+    margin: 0 30vw 0 39vw;
+  }
+
+  .footer__title {
+    font: normal 16px/20px robotoregular, sans-serif;
+    padding-left: 31vw;
+  }
+
+  .footer__text {
+    font: normal 16px/20px robotoregular, sans-serif;
+  }
+
+  .img-icon__linkedin,
+  .img-icon__instagram,
+  .img-icon__facebook {
+    height: 6vh;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 649px) {
+  .header {
+    height: 6vh;
+  }
+
+  .burg-menu,
+  .menu__button {
+    padding-top: 0;
+  }
+
+  .menu__item {
+    font: 800 10px/12px gilroyextrabold, sans-serif;
+  }
+
+  .menu__button {
+    width: 12vw;
+    height: 2.4vh;
+    margin-top: 2.1vh;
+    font: 800 10px/12px montserratextrabold, sans-serif;
+    padding: 1vw 4.1vh;
+  }
+
+  .main-header__title {
+    width: 54vw;
+    margin-bottom: 0;
+    padding-top: 8vh;
+    padding-left: 35.6vw;
+    font: 900 20px/24px montserratmedium, sans-serif;
+  }
+
+  .main-header__subtitle {
+    padding-left: 45vw;
+    font: bold 16px/19px montserratbold, sans-serif;
+  }
+
+  .main-header__subtitle_narrow {
+    font: bold 16px/19px montserratbold, sans-serif;
+  }
+
+  .main-content {
+    height: 136vh;
+  }
+
+  .main-content__title,
+  .main-skill__title,
+  .main-form__title {
+    font: 900 18px/21px montserratblack, sans-serif;
+  }
+
+  .main-content-col {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 1.8vh;
+    padding-left: 10vw;
+  }
+
+  .col-description-individual {
+    background-size: 26%;
+    background-position-x: 32vw;
+    width: 67vw;
+    height: 33vh;
+  }
+
+  .col-description-individual__title {
+    font: 800 17px/20px montserratblack, sans-serif;
+    padding-top: 13.5vh;
+    padding-left: 15vw;
+  }
+
+  .col-description-individual__text_short {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    padding-top: 0.5vh;
+    padding-left: 15vw;
+  }
+
+  .col-description-individual__text_long {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    padding-left: 6.7vw;
+    width: 70vw;
+  }
+
+  .col-description-individual__text_medium {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    width: 82vw;
+  }
+
+  .col-descrition-price {
+    background-size: 22%;
+    background-position-x: 32vw;
+    height: 24vh;
+    margin-bottom: 7vh;
+    width: 79vw;
+  }
+
+  .col-descrition-price__title_long {
+    font: 800 16px/20px montserratblack, sans-serif;
+    height: 2.8vh;
+    padding-top: 14vh;
+    padding-left: 21vw;
+    width: 39vw;
+  }
+
+  .col-descrition-price__title_short {
+    font: 800 16px/20px montserratblack, sans-serif;
+    margin-bottom: 0.5vh;
+    padding-left: 33vw;
+  }
+
+  .col-descrition-price__text {
+    font: 500 15px/20px montserratmedium, sans-serif;
+    margin: 0;
+    width: 82vw;
+  }
+
+  .col-description-result__title {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding-top: 13.8vh;
+  }
+
+  .col-description-result {
+    background-position: top center;
+    background-size: 22%;
+    height: 35vh;
+    width: 82vw;
+  }
+
+  .col-description-result__text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .col-description-result__text_narrow {
+    display: contents;
+    font: 500 16px/20px montserratmedium, sans-serif;
+    padding-top: 0;
+  }
+
+  .col-description-result__text_wide {
+    display: contents;
+    font: 500 16px/20px montserratmedium, sans-serif;
+    width: 86vw;
+  }
+
+  .main-content__button {
+    display: block;
+    font: 800 16px/20px montserratextrabold, sans-serif;
+    margin: 0 9vw 0 9vw;
+    padding: 2.2vh 2.2vw;
+    text-align: center;
+  }
+
+  .main-skill {
+    height: 72vh;
+  }
+
+  .main-skill__title {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding-top: 5.3vh;
+  }
+
+  .main-skill-code {
+    display: block;
+    position: relative;
+    padding: 4.8vh 0 0 12vw;
+  }
+
+  .main-skill-code__img {
+    padding-left: 24vw;
+    padding-right: 20vw;
+  }
+
+  .main-skill-code__title,
+  .main-skill-code__title_medium,
+  .main-skill-code__title_long {
+    font: 600 16px/19px montserratsemibold, sans-serif;
+    letter-spacing: 0.6px;
+    text-align: center;
+  }
+
+  .main-skill-code__title {
+    width: 72vw;
+    margin-bottom: 1vh;
+  }
+
+  .main-skill-code__subtitle {
+    font: 500 14px/17px montserratmedium, sans-serif;
+    padding-left: 8.9vw;
+    width: 56vw;
+    text-align: center;
+  }
+
+  .main-skill__circle {
+    display: block;
+    position: absolute;
+    left: 38vw;
+    top: 58.5vh;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ffda45;
+  }
+
+  .main-skill__circle_color_white {
+    border-radius: 50%;
+    border: 1px solid #e1e6e9;
+    position: absolute;
+    left: 10vw;
+    height: 15px;
+    width: 15px;
+  }
+
+  .main-skill__circle_color_white_right {
+    border-radius: 50%;
+    border: 1px solid #e1e6e9;
+    position: absolute;
+    left: 20vw;
+    height: 15px;
+    width: 15px;
+  }
+
+  .main-skill-game {
+    display: none;
+  }
+
+  .main-skill-app {
+    display: none;
+  }
+
+  .main-form {
+    height: 90.6vh;
+  }
+
+  .main-form__title {
+    font: 900 16px/19px montserratblack, sans-serif;
+    padding-left: 38vw;
+  }
+
+  .main-form__img {
+    padding-left: 34.5vw;
+  }
+
+  .contact-form__title {
+    font: 700 17px/20px montserratsemibold, sans-serif;
+    padding: 4.4vh 11vw 0 10vw;
+    width: 77vw;
+  }
+
+  .contact-form__input-wrapper {
+    padding-bottom: 1.8vh;
+    width: 78vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    height: 6vh;
+    font: 600 10px/12px montserratsemibold, sans-serif;
+    padding-left: 3vw;
+    width: 71vw;
+    letter-spacing: 0.5px;
+  }
+
+  .contact-form__input_contact-form__input_name {
+    padding-top: 1vh;
+    height: 5.5vh;
+  }
+
+  .contact-form__input_contact-form__input_email {
+    margin-bottom: 4.7vh;
+  }
+
+  .contact-form__button {
+    font: 900 16px/19px montserratblack, sans-serif;
+    margin: 0 10vw 0 14vw;
+    padding: 2.5vh 26vw;
+  }
+
+  .footer {
+    align-items: center;
+    height: 29.5vh;
+  }
+
+  .footer__title {
+    font: normal 14px/16px robotoregular, sans-serif;
+    padding-top: 4.3vh;
+    padding-left: 15vw;
+    width: 68vw;
+    text-align: center;
+  }
+
+  .icon__linkedin {
+    padding-left: 18vw;
+  }
+
+  .img-icon__linkedin,
+  .img-icon__instagram,
+  .img-icon__facebook {
+    height: 6vh;
+    padding-top: 2vh;
+  }
+
+  .icon__instagram,
+  .icon__facebook {
+    padding-left: 22.5%;
+    transition: opacity 0.5s;
+  }
+
+  .footer__text {
+    font: normal 14px/16px robotoregular, sans-serif;
+    padding-top: 6vh;
     text-align: center;
   }
 }
