@@ -1,0 +1,1662 @@
+body {
+  margin: 0;
+}
+
+.header {
+  height: 9vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2.6vh;
+  border-top: 3px solid #330099;
+  border-bottom: 3px solid #330099;
+}
+
+#menucheck {
+  opacity: 0;
+}
+
+.burg-menu,
+.menu__button {
+  padding-top: 2.8vh;
+}
+
+.menu__item {
+  font: 800 17px/24px gilroyextrabold, sans-serif;
+  margin-right: 2.7vw;
+  color: #585858;
+  text-decoration: none;
+  transition: opacity 0.5s;
+}
+
+.menu__item:hover {
+  opacity: 0.5;
+}
+.menu__button {
+  width: 8vw;
+  height: 2.4vh;
+  margin-top: 3.1vh;
+  margin-right: 9vw;
+  font: 800 16px/20px montserratextrabold, sans-serif;
+  color: #fff;
+  background: #330099;
+  padding: 1vw 3.6vh;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: opacity 0.5s;
+  text-align: center;
+}
+
+.menu__button:hover {
+  opacity: 0.5;
+}
+
+.main-header {
+  width: 100vw;
+  height: 51vh;
+  background: url(img/main.svg);
+  background-size: cover;
+}
+
+.main-header__title {
+  text-align: right;
+  width: 37vw;
+  height: 9vh;
+  padding-top: 16vh;
+  padding-left: 53.6vw;
+  padding-right: 9vw;
+  margin: 0;
+  margin-bottom: 2.5vh;
+  font: 900 40px/49px montserratmedium, sans-serif;
+  color: #330099;
+}
+
+.main-header__subtitle {
+  height: 7vh;
+  margin: 0;
+  margin-bottom: 2vh;
+  padding-left: 67vw;
+  padding-right: 2vw;
+  font: bold 33px/36px montserratbold, sans-serif;
+  color: #fff;
+}
+
+.main-header__subtitle_narrow {
+  height: 7vh;
+  margin: 0;
+  font: bold 33px/36px montserratbold, sans-serif;
+  color: #fff;
+  padding-left: 1vw;
+}
+
+.main-content {
+  background: #f9f9f9;
+  height: 79vh;
+  width: 100vw;
+}
+
+.main-content__title {
+  color: #585858;
+  font: 900 30px/37px montserratblack, sans-serif;
+  margin: 0 0 6vh;
+  padding: 9.5vh 28vw 0 28vw;
+  text-align: center;
+}
+
+.main-content-col {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 4.7vh;
+  padding: 0 9vw;
+}
+
+.col-description-individual {
+  background: no-repeat url(img/img1.svg);
+  background-position: top center;
+  height: 38vh;
+  margin-right: 2vw;
+  width: 22vw;
+}
+
+.col-description-individual__title {
+  color: #585858;
+  font: 800 30px/40px montserratblack, sans-serif;
+  margin: 0;
+  padding-top: 11.5vh;
+  text-align: center;
+}
+
+.col-description-individual__text_short {
+  color: #585858;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  text-align: center;
+  height: 2.7vh;
+  margin: 0;
+  padding-top: 0.7vh;
+  letter-spacing: 2px;
+}
+
+.col-description-individual__text_long {
+  color: #585858;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  text-align: center;
+  letter-spacing: 1.6px;
+  margin: 0;
+  padding-left: 2.8vw;
+  width: 16vw;
+}
+
+.col-description-individual__text_medium {
+  color: #585858;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1.5px;
+  width: 22vw;
+}
+
+.col-descrition-price {
+  background: no-repeat url(img/img2.svg);
+  background-position: top center;
+  height: 34vh;
+  width: 28vw;
+}
+
+.col-descrition-price__title_long {
+  color: #585858;
+  font: 800 30px/40px montserratblack, sans-serif;
+  margin: 0;
+  height: 4vh;
+  padding-top: 11.5vh;
+  text-align: center;
+  width: 14vw;
+  padding-left: 6.5vw;
+}
+
+.col-descrition-price__title_short {
+  color: #585858;
+  font: 800 30px/40px montserratblack, sans-serif;
+  margin: 0;
+  text-align: center;
+  width: 14vw;
+  padding-left: 7vw;
+  margin-bottom: 2.8vh;
+}
+
+.col-descrition-price__text {
+  color: #585858;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  text-align: center;
+  letter-spacing: 1.5px;
+  width: 23vw;
+  padding-left: 2.4vw;
+}
+
+.col-description-result__title {
+  color: #585858;
+  font: 900 30px/37px montserratblack, sans-serif;
+  margin: 0;
+  margin-bottom: 1vh;
+  padding-top: 12vh;
+  text-align: center;
+}
+
+.col-description-result {
+  background: no-repeat url(img/img3.svg);
+  background-position: top center;
+  height: 38.5vh;
+  width: 24vw;
+}
+
+.col-description-result__text {
+  margin: 0;
+}
+
+.col-description-result__text_narrow {
+  color: #585858;
+  display: flex;
+  justify-content: center;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  margin: 0;
+  letter-spacing: 1.5px;
+  padding-left: 2.4vw;
+  text-align: center;
+  width: 19vw;
+}
+
+.col-description-result__text_wide {
+  color: #585858;
+  display: flex;
+  justify-content: center;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  margin: 0;
+  letter-spacing: 1.3px;
+  text-align: center;
+  width: 24vw;
+}
+
+.main-content__button {
+  display: block;
+  font: 800 20px/26px montserratextrabold, sans-serif;
+  margin: 0 38vw 0 38vw;
+  color: #FFDA45;
+  background: #330099;
+  padding: 2.2vh 2.2vw;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: opacity 0.5s;
+}
+
+.main-content__button:hover {
+  opacity: 0.5;
+}
+
+.main-skill__title {
+  color: #585858;
+  font: 900 31px/37px montserratblack, sans-serif;
+  margin: 0;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.main-skill-code {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(7vh, auto);
+  grid-template-areas:
+    "img tit"
+    "img sub";
+  padding: 5.5vh 0 0 9vw;
+  margin-bottom: 6.7vh;
+}
+
+.main-skill-code__img {
+  grid-area: img;
+}
+.main-skill-code__title {
+  color: #585858;
+  font: 600 30px/36px montserratsemibold, sans-serif;
+  margin: 0;
+  padding: 0.3vh 0 0 1.6vw;
+  width: 40vw;
+  grid-area: tit;
+  letter-spacing: 1.3px;
+}
+
+.main-skill-code__title_medium {
+  color: #585858;
+  font: 600 30px/36px montserratsemibold, sans-serif;
+  letter-spacing: 1.7px;
+  margin: 0;
+  padding-top: 0.6vh;
+}
+
+.main-skill-code__title_long {
+  color: #585858;
+  font: 600 30px/36px montserratsemibold, sans-serif;
+  letter-spacing: 1.6px;
+  margin: 0;
+}
+
+.main-skill-code__subtitle {
+  color: #585858;
+  font: 500 21px/24px montserratmedium, sans-serif;
+  margin: 0;
+  padding-top: 1vh;
+  padding-left: 2vw;
+  width: 34vw;
+  letter-spacing: 1px;
+  grid-area: sub;
+}
+
+.main-skill__circle {
+  display: none;
+}
+
+.main-skill-game {
+  display: grid;
+  grid-template-columns: 1fr 12vw;
+    grid-template-rows: 8vh;
+    grid-template-areas:
+        "tit img"
+        "sub img"
+        "lsub img";
+    padding: 1vh 9vw 0 23vw;
+}
+
+.main-skill-game__img {
+  grid-area: img;
+}
+
+.main-skill-game__title {
+  color: #585858;
+  display: flex;
+  flex-direction: column;
+  grid-area: tit;
+  text-align: right;
+  font: 600 30px/36px montserratsemibold, sans-serif;
+  margin: 0;
+  padding: 3.3vh 2vw 0 0vw;
+  letter-spacing: 1.5px;
+}
+
+.main-skill-game__title_long {
+  color: #585858;
+  font: 600 30px/36px montserratsemibold, sans-serif;
+  margin: 0;
+  text-align: right;
+  width: 54vw;
+  letter-spacing: 1px;
+}
+
+.main-skill-game__subtitle {
+  color: #585858;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  letter-spacing: 1.2px;
+  margin: 0;
+  height: 1vh;
+  padding-top: 3.7vh;
+  grid-area: sub;
+  width: 30vw;
+  padding-left: 26vw;
+}
+
+.main-skill-game__subtitle_long {
+  color: #585858;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding-left: 23.5vw;
+  grid-area: lsub;
+  width: 31vw;
+}
+
+.main-skill-app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(7vh, auto);
+  grid-template-areas:
+    "img tit"
+    "img sub";
+  padding: 8.8vh 28vw 0 9vw;
+  margin-bottom: 10vh;
+}
+
+.main-skill-app__img {
+  grid-area: img;
+}
+.main-skill-app__title {
+  color: #585858;
+  font: 600 30px/36px montserratsemibold, sans-serif;
+  margin: 0;
+  padding-top: 1.6vh;
+  text-align: left;
+  width: 35vw;
+  grid-area: tit;
+  letter-spacing: 1.4px;
+}
+
+.main-skill-app__subtitle {
+  color: #585858;
+  font: 500 20px/24px montserratmedium, sans-serif;
+  margin: 0;
+  text-align: left;
+  width: 28vw;
+  letter-spacing: 1.6px;
+  grid-area: sub;
+}
+
+.main-form {
+  background: rgba(51, 0, 153, 0.12);
+  height: 91.3vh;
+}
+
+.main-form__title {
+  color: #585858;
+  font: 900 30px/37px montserratblack, sans-serif;
+  margin: 0;
+  padding-top: 6.5vh;
+  padding-left: 41vw;
+}
+
+.main-form__img {
+  display: block;
+  padding-left: 43.5vw;
+  padding-top: 3.5vh;
+}
+
+.contact-form__title {
+  color: #585858;
+  font: 700 21px/24px montserratsemibold, sans-serif;
+  margin: 0;
+  margin-bottom: 3.5vh;
+  padding-top: 5.5vh;
+  padding-left: 37vw;
+  text-align: center;
+  width: 26vw;
+}
+
+.contact-form__input-wrapper {
+  margin: 0 auto;
+  padding-bottom: 2.2vh;
+  width: 21vw;
+}
+
+.contact-form__input_contact-form__input_name,
+.contact-form__input_contact-form__input_tel,
+.contact-form__input_contact-form__input_email {
+  border-radius: 50px;
+  border-color: #fff;
+  height: 6.9vh;
+  font: 600 16px/18px montserratsemibold, sans-serif;
+  padding-left: 2.6vw;
+  width: 18vw;
+}
+
+.contact-form__input_contact-form__input_email {
+  margin-bottom: 3.9vh;
+}
+
+.contact-form__button {
+  font: 900 20px/24px montserratblack, sans-serif;
+  margin: 0 39vw 0 40vw;
+  color: #fff;
+  background: #4ab272;
+  padding: 2.7vh 6.2vw;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: opacity 0.5s;
+}
+
+.contact-form__button:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  align-items: center;
+  background: #330099;
+  color: #fff;
+  height: 34vh;
+}
+
+.footer__title {
+  font: normal 20px/26px robotoregular, sans-serif;
+  margin: 0;
+  margin-bottom: 2vh;
+  padding-top: 6vh;
+  padding-left: 37vw;
+  letter-spacing: 0.3px;
+}
+
+.icon__linkedin {
+  padding-left: 37vw;
+  transition: opacity 0.5s;
+}
+
+.icon__instagram,
+.icon__facebook {
+  padding-left: 6.5vw;
+  transition: opacity 0.5s;
+}
+
+.icon__instagram:hover,
+.icon__facebook:hover,
+.icon__linkedin:hover {
+  opacity: 0.5;
+}
+
+.footer__text {
+  font: normal 20px/23px robotoregular, sans-serif;
+  margin: 0;
+  margin-bottom: 4vh;
+  padding-top: 8vh;
+  text-align: center;
+}
+
+@media (min-width: 260px) and (max-width: 420px) {
+  .menu {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    height: 4.3vh;
+    border-top: 3px solid #330099;
+    border-bottom: 3px solid #330099;
+  }
+
+  #menucheck {
+    opacity: 0;
+    margin: 0;
+  }
+
+  .burg-menu {
+    padding-top: 0;
+  }
+
+  .burg-menu__btn {
+    display: flex;
+    margin-right: 9.5vw;
+    padding-top: 0;
+    position: relative;
+    width: 7.2vw;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .burg-menu__btn > span,
+  .burg-menu__btn > span::before,
+  .burg-menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #330099;
+  }
+
+  .burg-menu__btn > span::before {
+    content: "";
+    top: -7px;
+  }
+
+  .burg-menu__btn > span::after {
+    content: "";
+    top: 7px;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0.3vh;
+    max-width: 20;
+    height: 6vh;
+    margin: 0;
+    padding-top: 1vh;
+    padding-right: 10vw;
+    list-style: none;
+    background-color: #e7e0f3;
+  }
+
+  .menu__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 1.4vh;
+    padding-left: 9.3vw;
+    margin-right: 0;
+    margin-bottom: 1.3vh;
+    color: #000;
+    font: normal 8px/10px montserratextrabold, sans-serif;
+    text-decoration: none;
+  }
+
+  .menu__item:last-child {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  #menucheck:checked ~ .burg-menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menucheck:checked ~ .burg-menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menucheck:checked ~ .burg-menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menucheck:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__button {
+    display: flex;
+    align-items: center;
+    height: 2.8vh;
+    margin-top: 1.8vh;
+    margin-right: 6vw;
+    font: 800 8px/10px montserratextrabold, sans-serif;
+    padding-top: 2.7vh;
+    padding: 0 3.2vw;
+    width: 15vw;
+  }
+
+  .main-header {
+    height: 32.7vh;
+    background: no-repeat url(img/main.svg);
+    background-size: cover;
+    background-position-x: -15vw;
+  }
+
+  .main-header__title {
+    text-align: right;
+    height: 6.5vh;
+    padding-top: 3.6vh;
+    padding-left: 19vw;
+    padding-right: 10vw;
+    margin: 0;
+    font: 900 20px/24px montserratblack, sans-serif;
+    width: 70vw;
+  }
+
+  .main-header__subtitle {
+    height: 7vh;
+    margin: 0;
+    padding-left: 33vw;
+    font: bold 17px/21px montserratbold, sans-serif;
+    color: #fff;
+  }
+
+  .main-header__subtitle_narrow {
+    height: 7%;
+    margin: 0;
+    font: bold 17px/21px montserratbold, sans-serif;
+    color: #fff;
+    padding-left: 4vw;
+  }
+
+  .main-content {
+    height: 128.5vh;
+  }
+
+  .main-content__title {
+    font: 900 16px/19px montserratblack, sans-serif;
+    margin: 0 0 4.8vh;
+    padding: 7vh 22vw 0 21vw;
+  }
+
+  .main-content-col {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 1.8vh;
+    padding-left: 9vw;
+  }
+
+  .col-description-individual {
+    background-size: 26%;
+    background-position-x: 32vw;
+    width: 67vw;
+    height: 33vh;
+  }
+
+  .col-description-individual__title {
+    font: 800 17px/20px montserratblack, sans-serif;
+    padding-top: 8.5vh;
+    padding-left: 14vw;
+    text-align: center;
+  }
+
+  .col-description-individual__text_short {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    text-align: center;
+    height: 2.6vh;
+    margin-bottom: 0.2vh;
+    padding-top: 0.5vh;
+    padding-left: 15vw;
+    letter-spacing: 1.5px;
+  }
+
+  .col-description-individual__text_long {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    text-align: center;
+    height: 5.7vh;
+    padding-left: 9.7vw;
+    width: 61vw;
+    letter-spacing: 1.3px;
+  }
+
+  .col-description-individual__text_medium {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    text-align: center;
+    width: 82vw;
+    letter-spacing: 1.2px;
+  }
+
+  .col-descrition-price {
+    background-size: 22%;
+    background-position-x: 32vw;
+    height: 24vh;
+    margin-bottom: 4vh;
+    width: 79vw;
+  }
+
+  .col-descrition-price__title_long {
+    font: 800 16px/20px montserratblack, sans-serif;
+    height: 2.8vh;
+    padding-top: 9vh;
+    padding-left: 21vw;
+    text-align: center;
+    width: 39vw;
+  }
+
+  .col-descrition-price__title_short {
+    font: 800 16px/20px montserratblack, sans-serif;
+    margin-bottom: 0.5vh;
+    padding-left: 33vw;
+  }
+
+  .col-descrition-price__text {
+    font: 500 15px/20px montserratmedium, sans-serif;
+    margin: 0;
+    letter-spacing: 1.7px;
+    padding-left: 0;
+    text-align: center;
+    width: 82vw;
+  }
+
+  .col-description-result__title {
+    font: 900 16px/20px montserratblack, sans-serif;
+    margin-bottom: 0.5vh;
+    padding-top: 8.8vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    text-align: center;
+  }
+
+  .col-description-result {
+    background-position: top center;
+    background-size: 22%;
+    height: 35vh;
+    width: 82vw;
+  }
+
+  .col-description-result__text {
+    margin: 0;
+    text-align: center;
+    padding-left: 6.2vw;
+    padding-right: 6vw;
+  }
+
+  .col-description-result__text_narrow {
+    display: contents;
+    font: 500 16px/20px montserratmedium, sans-serif;
+    padding-top: 0;
+    letter-spacing: 1.5px;
+    width: 74vw;
+    word-spacing: 6px;
+  }
+
+  .col-description-result__text_wide {
+    display: contents;
+    font: 500 16px/20px montserratmedium, sans-serif;
+    letter-spacing: 1.4px;
+    width: 86vw;
+  }
+
+  .main-content__button {
+    display: block;
+    font: 800 16px/20px montserratextrabold, sans-serif;
+    margin: 0 9vw 0 9vw;
+    padding: 2.2vh 2.2vw;
+    text-align: center;
+  }
+
+  .main-skill {
+    height: 72vh;
+  }
+
+  .main-skill__title {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding-top: 5.3vh;
+  }
+
+  .main-skill-code {
+    display: block;
+    position: relative;
+    padding: 4.8vh 0 0 12vw;
+  }
+
+  .main-skill-code__img {
+    padding: 0 10vw;
+  }
+
+  .main-skill-code__title {
+    font: 600 16px/19px montserratsemibold, sans-serif;
+    padding: 1.3vh 0 0 1vw;
+    width: 72vw;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-bottom: 1vh;
+  }
+
+  .main-skill-code__title_medium {
+    font: 600 16px/19px montserratsemibold, sans-serif;
+    letter-spacing: 0.9px;
+    padding-right: 3vw;
+    padding-left: 0;
+  }
+
+  .main-skill-code__title_long {
+    font: 600 16px/19px montserratsemibold, sans-serif;
+    letter-spacing: 0.6px;
+    padding-left: 0;
+  }
+
+  .main-skill-code__subtitle {
+    font: 500 14px/17px montserratmedium, sans-serif;
+    margin: 0;
+    padding-top: 1vh;
+    padding-left: 8.9vw;
+    width: 56vw;
+    text-align: center;
+  }
+
+  .main-skill__circle {
+    display: block;
+    position: absolute;
+    left: 38vw;
+    top: 58.5vh;
+    transform: translateY(-50%);
+    width: 5vw;
+    height: 2.2vh;
+    border-radius: 50%;
+    background: #ffda45;
+  }
+
+  .main-skill__circle_color_white {
+    border-radius: 50%;
+    border: 1px solid #e1e6e9;
+    position: absolute;
+    left: 10vw;
+    height: 2vh;
+    width: 4.5vw;
+  }
+
+  .main-skill__circle_color_white_right {
+    border-radius: 50%;
+    border: 1px solid #e1e6e9;
+    position: absolute;
+    left: 20vw;
+    height: 2vh;
+    width: 4.5vw;
+  }
+
+  .main-skill-game {
+    display: none;
+  }
+
+  .main-skill-app {
+    display: none;
+  }
+
+  .main-form {
+    height: 90.6vh;
+  }
+
+  .main-form__title {
+    font: 900 16px/19px montserratblack, sans-serif;
+    padding-top: 5.5vh;
+    padding-left: 29vw;
+  }
+
+  .main-form__img {
+    padding: 2.4vh 17vw 0 23vw;
+  }
+
+  .contact-form__title {
+    font: 700 17px/20px montserratsemibold, sans-serif;
+    margin-bottom: 2.2vh;
+    padding: 4.4vh 6vw 0 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .contact-form__input-wrapper {
+    margin: 0 auto;
+    padding-bottom: 1.8vh;
+    width: 80vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 6vh;
+    font: 600 10px/12px montserratsemibold, sans-serif;
+    padding-left: 7vw;
+    width: 71vw;
+    letter-spacing: 0.5px;
+  }
+
+  .contact-form__input_contact-form__input_name {
+    padding-top: 1vh;
+    height: 5.5vh;
+  }
+
+  .contact-form__input_contact-form__input_email {
+    margin-bottom: 4.7vh;
+  }
+
+  .contact-form__button {
+    font: 900 16px/19px montserratblack, sans-serif;
+    margin: 0 9vw 0 9vw;
+    color: #fff;
+    background: #4ab272;
+    padding: 2.5vh 26vw;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: opacity 0.5s;
+  }
+
+  .contact-form__button:hover {
+    opacity: 0.5;
+  }
+
+  .footer {
+    align-items: center;
+    background: #330099;
+    color: #fff;
+    height: 29.5vh;
+  }
+
+  .footer__title {
+    font: normal 14px/16px robotoregular, sans-serif;
+    margin: 0;
+    padding-top: 4.3vh;
+    padding-left: 15vw;
+    width: 68vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon__linkedin {
+    padding-left: 10%;
+    transition: opacity 0.5s;
+  }
+
+  .img-icon__linkedin,
+  .img-icon__instagram,
+  .img-icon__facebook {
+    height: 5vh;
+    padding-top: 2vh;
+  }
+
+  .icon__instagram,
+  .icon__facebook {
+    padding-left: 22.5%;
+    transition: opacity 0.5s;
+  }
+
+  .icon__instagram:hover,
+  .icon__facebook:hover,
+  .icon__linkedin:hover {
+    opacity: 0.5;
+  }
+
+  .footer__text {
+    font: normal 14px/16px robotoregular, sans-serif;
+    margin: 0;
+    padding-top: 6vh;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1070px) and (max-width: 1410px) {
+
+  .menu__button {
+    margin-top: 4.5vh;
+    font: 800 15px/18px montserratextrabold, sans-serif;
+    padding: 0.8vw 3.2vh;
+    text-align: center;
+  }
+
+  .main-header__title {
+    width: 42vw;
+    padding-right: 0;
+  }
+
+  .main-header__subtitle {
+    padding-left: 65vw;
+  }
+
+  .main-content__button {
+    font: 800 14px/20px montserratextrabold, sans-serif;
+  }
+
+  .main-skill-code__title,
+  .main-skill-code__title_medium,
+  .main-skill-code__title_long {
+    font: 600 24px/30px montserratsemibold, sans-serif;
+    width: 46vw;
+    letter-spacing: 0;
+  }
+
+  .main-skill-game {
+    padding-left: 19vw;
+  }
+
+  .main-skill-game__title {
+    font: 600 24px/30px montserratsemibold, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .main-skill-game__title_long {
+    font: 600 24px/30px montserratsemibold, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .main-skill-game__subtitle {
+    letter-spacing: 0;
+    width: 35vw;
+  }
+
+  .main-skill-app__title {
+    width: 39vw;
+    font: 600 24px/30px montserratsemibold, sans-serif;
+  }
+
+  .main-skill-app__subtitle {
+    width: 36vw;
+    letter-spacing: 0;
+  }
+
+  .contact-form__title {
+    width: 35vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    height: 5.9vh;
+    font: 600 14px/18px montserratsemibold, sans-serif;
+    width: 25vw;
+  }
+
+  .contact-form__button {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding: 2.1vh 9.2vw;
+    margin: 0 33vw 0 40vw;
+    text-align: center;
+  }
+}
+
+@media (min-width: 876px) and (max-width: 1069px) {
+
+  .menu__button {
+    font: 800 14px/16px montserratextrabold, sans-serif;
+    padding: 1vw 4.6vh;
+    margin-top: 4.5vh;
+  }
+
+  .main-header__title {
+    width: 68vw;
+    padding-left: 19.6vw;
+    font: 900 30px/39px montserratmedium, sans-serif;
+  }
+
+  .main-header__subtitle {
+    padding-left: 59vw;
+    font: bold 26px/30px montserratbold, sans-serif;
+  }
+
+  .main-header__subtitle_narrow {
+    font: bold 26px/30px montserratbold, sans-serif;
+  }
+
+  .main-content__title,
+  .main-skill__title,
+  .main-form__title {
+    font: 900 26px/30px montserratblack, sans-serif;
+  }
+
+  .col-description-individual__title,
+  .col-descrition-price__title_long,
+  .col-descrition-price__title_short,
+  .col-description-result__title {
+    font: 800 24px/32px montserratblack, sans-serif;
+  }
+
+  .col-description-individual__text_short,
+  .col-description-individual__text_long,
+  .col-description-individual__text_medium,
+  .col-descrition-price__text,
+  .col-description-result__text_narrow,
+  .col-description-result__text_wide {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    letter-spacing: 1px;
+    width: 21vw;
+  }
+
+  .main-content__button {
+    font: 800 16px/20px montserratextrabold, sans-serif;
+    margin: 0 33vw 0 33vw;
+    padding: 2.2vh 4.2vw;
+  }
+
+  .main-skill-code__title,
+  .main-skill-code__title_medium,
+  .main-skill-code__title_long,
+  .main-skill-game__title,
+  .main-skill-game__title_long,
+  .main-skill-app__title {
+    font: 600 24px/30px montserratsemibold, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .main-skill-code__subtitle,
+  .main-skill-game__subtitle,
+  .main-skill-game__subtitle_long,
+  .main-skill-app__subtitle {
+    font: 500 18px/20px montserratmedium, sans-serif;
+  }
+
+  .main-skill-game__subtitle {
+    width: 43vw;
+    padding-left: 11vw;
+  }
+
+  .main-skill-game__subtitle_long {
+    padding-left: 7.5vw;
+    width: 47vw;
+  }
+
+  .main-skill-game {
+    padding: 1vh 17vw 0 16vw;
+  }
+
+  .contact-form__title {
+    font: 700 19px/20px montserratsemibold, sans-serif;
+    padding-left: 31vw;
+    width: 38vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    height: 5.9vh;
+    font: 600 14px/16px montserratsemibold, sans-serif;
+    width: 26vw;
+  }
+
+  .contact-form__button {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding: 2.1vh 9.2vw;
+    text-align: center;
+    margin: 0 32vw 0 39vw;
+  }
+
+  .footer__title {
+    padding-left: 31vw;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 875px) {
+
+  .menu__item {
+    font: 800 12px/16px gilroyextrabold, sans-serif;
+  }
+
+  .menu__button {
+    font: 800 10px/16px montserratextrabold, sans-serif;
+    padding: 1vw 4.6vh;
+    margin-top: 4.5vh;
+  }
+
+  .main-header__title {
+    width: 68vw;
+    padding-left: 19.6vw;
+    padding-top: 9vh;
+    font: 900 30px/39px montserratmedium, sans-serif;
+  }
+
+  .main-header__subtitle {
+    padding-left: 50vw;
+    font: bold 24px/26px montserratbold, sans-serif;
+  }
+
+  .main-header__subtitle_narrow {
+    font: bold 24px/26px montserratbold, sans-serif;
+  }
+
+  .main-content-col {
+    padding: 0 4vw;
+  }
+
+  .main-content__title,
+  .main-skill__title,
+  .main-form__title {
+    font: 900 20px/24px montserratblack, sans-serif;
+  }
+
+  .col-description-individual {
+    width: 25vw;
+    margin-right: 0;
+  }
+
+  .col-description-individual__title,
+  .col-descrition-price__title_long,
+  .col-descrition-price__title_short,
+  .col-description-result__title {
+    font: 800 19px/21px montserratblack, sans-serif;
+  }
+
+  .col-description-individual__text_short,
+  .col-description-individual__text_long,
+  .col-description-individual__text_medium,
+  .col-descrition-price__text,
+  .col-description-result__text_narrow,
+  .col-description-result__text_wide {
+    font: 500 14px/18px montserratmedium, sans-serif;
+    letter-spacing: 1px;
+    width: 25vw;
+  }
+
+  .col-description-result__text_narrow {
+    padding-left: 0;
+  }
+
+  .main-content__button {
+    font: 800 12px/15px montserratextrabold, sans-serif;
+    margin: 0 30vw 0 30vw;
+    padding: 2.2vh 4.2vw;
+  }
+
+  .main-skill-code__title,
+  .main-skill-code__title_medium,
+  .main-skill-code__title_long,
+  .main-skill-game__title,
+  .main-skill-game__title_long,
+  .main-skill-app__title {
+    font: 600 20px/24px montserratsemibold, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .main-skill-code__subtitle,
+  .main-skill-game__subtitle,
+  .main-skill-game__subtitle_long,
+  .main-skill-app__subtitle {
+    font: 500 16px/18px montserratmedium, sans-serif;
+  }
+
+  .main-skill-game__subtitle {
+    width: 52vw;
+    padding-left: 3vw;
+  }
+
+  .main-skill-game__subtitle_long {
+    padding-left: 0.5vw;
+    width: 56vw;
+  }
+
+  .main-skill-game {
+    padding: 1vh 17vw 0 16vw;
+  }
+
+  .main-skill-app__title {
+    padding-left: 3vw;
+    width: 47vw;
+  }
+
+  .main-skill-app__subtitle {
+    width: 41vw;
+    padding-left: 3vw;
+  }
+
+  .main-form__img {
+    padding-left: 40.5vw;
+  }
+
+  .contact-form__title {
+    font: 700 17px/20px montserratsemibold, sans-serif;
+    padding-left: 28vw;
+    width: 51vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    height: 4.9vh;
+    font: 600 12px/14px montserratsemibold, sans-serif;
+    width: 26vw;
+  }
+
+  .contact-form__button {
+    font: 900 14px/17px montserratblack, sans-serif;
+    padding: 2.1vh 9.2vw;
+    text-align: center;
+    margin: 0 30vw 0 39vw;
+  }
+
+  .footer__title {
+    font: normal 16px/20px robotoregular, sans-serif;
+    padding-left: 31vw;
+  }
+
+  .footer__text {
+    font: normal 16px/20px robotoregular, sans-serif;
+  }
+
+  .img-icon__linkedin,
+  .img-icon__instagram,
+  .img-icon__facebook {
+    height: 6vh;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 649px) {
+  .header {
+    height: 6vh;
+  }
+
+  .burg-menu,
+  .menu__button {
+    padding-top: 0;
+  }
+
+  .menu__item {
+    font: 800 10px/12px gilroyextrabold, sans-serif;
+  }
+
+  .menu__button {
+    width: 12vw;
+    height: 2.4vh;
+    margin-top: 2.1vh;
+    font: 800 10px/12px montserratextrabold, sans-serif;
+    padding: 1vw 4.1vh;
+  }
+
+  .main-header__title {
+    width: 54vw;
+    margin-bottom: 0;
+    padding-top: 8vh;
+    padding-left: 35.6vw;
+    font: 900 20px/24px montserratmedium, sans-serif;
+  }
+
+  .main-header__subtitle {
+    padding-left: 45vw;
+    font: bold 16px/19px montserratbold, sans-serif;
+  }
+
+  .main-header__subtitle_narrow {
+    font: bold 16px/19px montserratbold, sans-serif;
+  }
+
+  .main-content {
+    height: 136vh;
+  }
+
+  .main-content__title,
+  .main-skill__title,
+  .main-form__title {
+    font: 900 18px/21px montserratblack, sans-serif;
+  }
+
+  .main-content-col {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 1.8vh;
+    padding-left: 10vw;
+  }
+
+  .col-description-individual {
+    background-size: 26%;
+    background-position-x: 32vw;
+    width: 67vw;
+    height: 33vh;
+  }
+
+  .col-description-individual__title {
+    font: 800 17px/20px montserratblack, sans-serif;
+    padding-top: 13.5vh;
+    padding-left: 15vw;
+  }
+
+  .col-description-individual__text_short {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    padding-top: 0.5vh;
+    padding-left: 15vw;
+  }
+
+  .col-description-individual__text_long {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    padding-left: 6.7vw;
+    width: 70vw;
+  }
+
+  .col-description-individual__text_medium {
+    font: 500 16px/20px montserratmedium, sans-serif;
+    width: 82vw;
+  }
+
+  .col-descrition-price {
+    background-size: 22%;
+    background-position-x: 32vw;
+    height: 24vh;
+    margin-bottom: 7vh;
+    width: 79vw;
+  }
+
+  .col-descrition-price__title_long {
+    font: 800 16px/20px montserratblack, sans-serif;
+    height: 2.8vh;
+    padding-top: 14vh;
+    padding-left: 21vw;
+    width: 39vw;
+  }
+
+  .col-descrition-price__title_short {
+    font: 800 16px/20px montserratblack, sans-serif;
+    margin-bottom: 0.5vh;
+    padding-left: 33vw;
+  }
+
+  .col-descrition-price__text {
+    font: 500 15px/20px montserratmedium, sans-serif;
+    margin: 0;
+    width: 82vw;
+  }
+
+  .col-description-result__title {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding-top: 13.8vh;
+  }
+
+  .col-description-result {
+    background-position: top center;
+    background-size: 22%;
+    height: 35vh;
+    width: 82vw;
+  }
+
+  .col-description-result__text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .col-description-result__text_narrow {
+    display: contents;
+    font: 500 16px/20px montserratmedium, sans-serif;
+    padding-top: 0;
+  }
+
+  .col-description-result__text_wide {
+    display: contents;
+    font: 500 16px/20px montserratmedium, sans-serif;
+    width: 86vw;
+  }
+
+  .main-content__button {
+    display: block;
+    font: 800 16px/20px montserratextrabold, sans-serif;
+    margin: 0 9vw 0 9vw;
+    padding: 2.2vh 2.2vw;
+    text-align: center;
+  }
+
+  .main-skill {
+    height: 72vh;
+  }
+
+  .main-skill__title {
+    font: 900 16px/20px montserratblack, sans-serif;
+    padding-top: 5.3vh;
+  }
+
+  .main-skill-code {
+    display: block;
+    position: relative;
+    padding: 4.8vh 0 0 12vw;
+  }
+
+  .main-skill-code__img {
+    padding-left: 24vw;
+    padding-right: 20vw;
+  }
+
+  .main-skill-code__title,
+  .main-skill-code__title_medium,
+  .main-skill-code__title_long {
+    font: 600 16px/19px montserratsemibold, sans-serif;
+    letter-spacing: 0.6px;
+    text-align: center;
+  }
+
+  .main-skill-code__title {
+    width: 72vw;
+    margin-bottom: 1vh;
+  }
+
+  .main-skill-code__subtitle {
+    font: 500 14px/17px montserratmedium, sans-serif;
+    padding-left: 8.9vw;
+    width: 56vw;
+    text-align: center;
+  }
+
+  .main-skill__circle {
+    display: block;
+    position: absolute;
+    left: 38vw;
+    top: 58.5vh;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ffda45;
+  }
+
+  .main-skill__circle_color_white {
+    border-radius: 50%;
+    border: 1px solid #e1e6e9;
+    position: absolute;
+    left: 10vw;
+    height: 15px;
+    width: 15px;
+  }
+
+  .main-skill__circle_color_white_right {
+    border-radius: 50%;
+    border: 1px solid #e1e6e9;
+    position: absolute;
+    left: 20vw;
+    height: 15px;
+    width: 15px;
+  }
+
+  .main-skill-game {
+    display: none;
+  }
+
+  .main-skill-app {
+    display: none;
+  }
+
+  .main-form {
+    height: 90.6vh;
+  }
+
+  .main-form__title {
+    font: 900 16px/19px montserratblack, sans-serif;
+    padding-left: 38vw;
+  }
+
+  .main-form__img {
+    padding-left: 34.5vw;
+  }
+
+  .contact-form__title {
+    font: 700 17px/20px montserratsemibold, sans-serif;
+    padding: 4.4vh 11vw 0 10vw;
+    width: 77vw;
+  }
+
+  .contact-form__input-wrapper {
+    padding-bottom: 1.8vh;
+    width: 78vw;
+  }
+
+  .contact-form__input_contact-form__input_name,
+  .contact-form__input_contact-form__input_tel,
+  .contact-form__input_contact-form__input_email {
+    height: 6vh;
+    font: 600 10px/12px montserratsemibold, sans-serif;
+    padding-left: 3vw;
+    width: 71vw;
+    letter-spacing: 0.5px;
+  }
+
+  .contact-form__input_contact-form__input_name {
+    padding-top: 1vh;
+    height: 5.5vh;
+  }
+
+  .contact-form__input_contact-form__input_email {
+    margin-bottom: 4.7vh;
+  }
+
+  .contact-form__button {
+    font: 900 16px/19px montserratblack, sans-serif;
+    margin: 0 10vw 0 14vw;
+    padding: 2.5vh 26vw;
+  }
+
+  .footer {
+    align-items: center;
+    height: 29.5vh;
+  }
+
+  .footer__title {
+    font: normal 14px/16px robotoregular, sans-serif;
+    padding-top: 4.3vh;
+    padding-left: 15vw;
+    width: 68vw;
+    text-align: center;
+  }
+
+  .icon__linkedin {
+    padding-left: 18vw;
+  }
+
+  .img-icon__linkedin,
+  .img-icon__instagram,
+  .img-icon__facebook {
+    height: 6vh;
+    padding-top: 2vh;
+  }
+
+  .icon__instagram,
+  .icon__facebook {
+    padding-left: 22.5%;
+    transition: opacity 0.5s;
+  }
+
+  .footer__text {
+    font: normal 14px/16px robotoregular, sans-serif;
+    padding-top: 6vh;
+    text-align: center;
+  }
+}

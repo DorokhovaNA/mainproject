@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta  charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Разработка сайтов</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link  href="style.css"  rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="burg-menu">
+        <input id='menucheck' type="checkbox"/>
+        <label class="burg-menu__btn" for="menucheck">
+          <span></span>
+        </label>
+        <nav class="menu">
+          <a class="menu__item" href="#">Мои навыки</a>
+          <a class="menu__item" href="#">Оставить заявку</a>
+        </nav>
+      </div>
+      <a class="menu__button" href="#">Позвонить</a>
+    </header>
+    <main>
+      <section class="main-header">
+        <h1 class="main-header__title">Разработка сайтов, игр и приложений</h1>
+        <p class="main-header__subtitle">Помогаю воплощать <span class="main-header__subtitle_narrow">мечты в реальность</span></p>
+      </section>
+      <section class="main-content">
+        <h3 class="main-content__title">Почему вам стоит обратиться ко мне</h3>
+        <div class="main-content-col">
+          <div class="col-description-individual">
+            <h3 class="col-description-individual__title">Индивидуальный подход</h3>
+            <p class="col-description-individual__text_short">Каждый клиент</p>
+            <p class="col-description-individual__text_long">для меня особенный. Я тщательно изучаю</p>
+            <p class="col-description-individual__text_medium">что ему необходимо, прежде, чем приступить к работе.</p>
+          </div>
+          <div class="col-descrition-price">
+            <h3 class="col-descrition-price__title_long">Разумные</h3>
+            <h3 class="col-descrition-price__title_short">цены</h3>
+            <p class="col-descrition-price__text">Я предлагаю выгодные цены за безупречное выполнение работы и соблюдение сроков.</p>
+          </div>
+          <div class=col-description-result>
+            <h3 class="col-description-result__title">Отличный результат!</h3>
+            <p class="col-description-result__text">
+              <span class="col-description-result__text_narrow">Я внимательно работаю над каждым проектом.</span>
+              <span class="col-description-result__text_wide">Я очень люблю свою работу, поэтому вас обрадует результат проделанной работы.</span>
+            </p>
+          </div>
+        </div>
+        <a class="main-content__button" href="#">Получить консультацию</a>
+      </section>
+      <section class="main-skill">
+        <h3 class="main-skill__title">Что я могу</h3>
+        <div class="main-skill-section">
+          <div class="main-skill-code">
+            <img class="main-skill-code__img" src="img/img4.svg">
+            <h3 class="main-skill-code__title">Я умею писать валидный
+              <span class="main-skill-code__title_medium">и&nbsp;семмантически верный код</span>
+              <span class="main-skill-code__title_long">для&nbsp;вашего сайта или приложения</span>
+            </h3>
+            <p class="main-skill-code__subtitle">Ваш сайт и приложение будут верно&nbsp;работать, благодаря моей верстке</p>
+            <div class="main-skill__circle">
+              <div class="main-skill__circle_color_white"></div>
+              <div class="main-skill__circle_color_white_right"></div>
+            </div>
+          </div>
+          <div class="main-skill-game">
+            <img class="main-skill-game__img" src="img/img5.svg">
+            <h3 class="main-skill-game__title">Я умею создавать игры
+              <span class="main-skill-game__title_long">и анимации с помощью JavaScript</span>
+            </h3>
+            <p class="main-skill-game__subtitle">Я свободно владею языком JavaScript</p>
+            <p class="main-skill-game__subtitle_long">и могу “оживить” ваш сайт и приложение</p>
+          </div>
+          <div class="main-skill-app">
+            <img class="main-skill-app__img" src="img/img6.svg">
+            <h3 class="main-skill-app__title">Я умею создавать приложения с помощью React</h3>
+            <p class="main-skill-app__subtitle">Благодаря моим навыкам, ваш сайт и приложение будут максимально удобными в использовании</p>
+          </div>
+        </div>
+      </section>
+      <section class="main-form">
+        <h3 class="main-form__title">Есть вопросы?</h3>
+        <img class="main-form__img" src="img/img7.svg">
+        <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+          <p class="contact-form__title">Заполните, пожалуйста, эту форму и я обязательно свяжусь с вами</p>
+          <div class="contact-form__input-wrapper">
+            <input name="name" type="text" class="contact-form__input_contact-form__input_name" placeholder="Имя и фамилия">
+          </div>
+          <div class="contact-form__input-wrapper">
+            <input name="tel" type="tel" class="contact-form__input_contact-form__input_tel" placeholder="Номер телефона">
+          </div>
+          <div class="contact-form__input-wrapper">
+            <input name="email" type="email" class="contact-form__input_contact-form__input_email" placeholder="e-mail">
+          </div>
+          <a class="contact-form__button" href="#">Отправить</a>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__title">Меня можно <span class="footer__title_wide">найти в социальных сетях:</span></p>
+      <a class="icon__linkedin" href="#"><img class="img-icon__linkedin" src="img/linkedin.svg"></a>
+      <a class="icon__instagram"  href="#"><img class="img-icon__instagram" src="img/instagram.svg"></a>
+      <a class="icon__facebook" href="#"><img class="img-icon__facebook" src="img/facebook.svg"></a>
+      <p class="footer__text">2020 © WebHero School</p>
+    </footer>
+  </body>
+</html>
